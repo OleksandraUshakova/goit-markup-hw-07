@@ -12,10 +12,15 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-}
 
-.form-field:nth-child(5) {
+
+&:nth-child(5) {
     margin-bottom: 0px;
+    }
+&:hover .registration-icon,
+&:focus .registration-icon{
+    fill:var(--accent-color);
+    }
 }
 
 .form-field label{
@@ -39,6 +44,11 @@
     transition-duration: 250ms;
     transition-timing-function: linear;
     transition-delay: 0s;
+
+&:hover,
+&:focus{
+border-color: var(--accent-color);
+    }
 }
 
 .registration-icon{
@@ -51,15 +61,6 @@
 .form-input:focus {
     outline: none;
     border-color: var(--accent-color);
-}
-.form-field input:hover,
-.form-field input:focus{
-border-color: var(--accent-color);
-}
-
-.form-field:hover .registration-icon,
-.form-field:focus .registration-icon{
-    fill:var(--accent-color);
 }
 
 .comment {
@@ -87,10 +88,9 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
-
 color: #757575;
-}
-.form-checkbox-label::before {
+
+&::before {
     content: '';
     display: block;
     width: 16px;
@@ -99,6 +99,7 @@ color: #757575;
     cursor: pointer;
     border-radius: 2px;
     margin-right: 9px;
+    }
 }
 
 .form-checkbox:checked + 
